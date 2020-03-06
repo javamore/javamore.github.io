@@ -1,7 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>javamore's Resume</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
 <body>
-<h1>Welcome to javamore's world</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >Weijie Mo</h1>
+                <h4 id="persona-tag" >Python / Web / Software Developing</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">Basic Info</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">Name</label><span class="label-value">Weijie Mo</span></li>
+                    <li>
+                        <label class="left-label">Education</label><span class="label-value">Will be A Master soon</span></li>
+                    <li>
+                        <label class="left-label">School</label><span class="label-value">Oregon State University</span></li>
+                    <li>
+                        <label class="left-label">Date</label><span class="label-value">March/2020</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">Contact Info</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">Mail</label><span class="label-value">javamore2@gmail.com</span></li>
+                    <li>
+                        <label class="left-label">Homepage</label><span class="label-value">javamore.github.io</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">github.com/javamore</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">Skills</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Python</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">html/css</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Javascript</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Frontend</label><span class="label-value">jQuery、Angular.js、React.js</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">Backend</label><span class="label-value">Django、Node.js、MongoDB、MySQL、Redis</span></li>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">Education Background</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>Oregon State University Computer Science（Master of Engineering）2017-2020</h3>
+                    <Li>
+
+                        <h3>Shanghai Jianqiao University - Network Engineering（Bachelor of Engineering）2013-2017</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">Project Experiences</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>Developed a Used Car Recommendation Website</h3>
+                        <p>
+                            <b>Purpose:</b> Created a used car recommendation system which is a website to guide people who want to search and compare used cars information, then provide results to users to help them make reliable choice. We found a dataset from Kaggle and created the database, the dataset has over 350,000 records and 14 attributes, we connected database with website, users just input what they choose: Make, Model, Year, and Mileage. Then, system will show the detailed results from users’ choices: vehicle’s Name, Price, Style, Year, Model, Mileage, Fuel, Make, etc. Besides, we also calculated the results and provide the max/min price, average_price of these cars.
+                            <br/>
+
+                            <b>Duties:</b> Lead team, arrange team work, find datasets, create and modify the database.
+                            <br/>
+
+                            <b>Technology used:</b>  DataGrip, WebStorm, MySQL, PHP.
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Design a Rideshare Platform(website) for campus use</h3>
+                        <p>
+                            <b>Purpose:</b> Provide a rideshare platform for local campus students and staff, people can log in this system automatically by their campus account, since we connect school’s API to allow users log in directly without registration. Passengers and drivers both are students or school staffs, which in some way increase the rides’ safety and reliability. And it is a platform mainly focuses on campus, then fees could be lower than other competitors, like Uber, Lyft.
+                            <br/>
+
+                            <b>Duties:</b> Product owner, user stories and backlog reduction, UI design.
+                            <br/>
+
+                            <b>Technology used:</b> Agile, PHP.
+                            <br/>
+                         </p>
+                    </li>
+                    <li>
+                        <h3>Design and implement of Arduino and Bluetooth based ECG device</h3>
+                        <p>
+                            <b>Purpose:</b> Develop a tool which includes both hardware and software, to detect people’s heart rate and save it on mobile device for further use.
+                            <br/>
+                            <b>Duties:</b> Work independently, combined sensors into board, then connect board and mobile device via Bluetooth to transfer real-time heart rate data.
+                            <br/>
+
+                            <b>Technology used:</b> Android studio, Arduino UNO board, Arduino IDE, Bluetooth.
+                            <br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
 </body>
+
 </html>
